@@ -18,6 +18,6 @@ if (isset($_GET['id'])) {
 }
 
 
-header('Location: ../public/index.php');
+header('Location: ../public/dashboard.php');
 exit;
 ?>
