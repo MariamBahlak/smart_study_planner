@@ -1,17 +1,16 @@
-# 🎓 Smart Study Planner & AI Assistant
+🎓 Smart Study Planner & AI Assistant
 A modern, secure, and production-ready Web Application designed to help students organize academic tasks, boost productivity, and interact with an integrated AI study assistant.
-## ✨ Features
-- Glassmorphism UI: A sleek, modern dark-themed user interface built with advanced CSS3 and responsive layouts.
-- Secure Authentication: Strict server-side validation, password complexity requirements with real-time UI feedback, secure password hashing (bcrypt), and strict email domain existence checks.
-- Task Management: Add, view, complete/undo, and delete academic study tasks dynamically linked per user via secure database sessions.
-- AI Study Assistant: Integrated with Google's Gemini AI API via cURL to provide instant, concise, and professional study recommendations and answers.
-## 🛠️ Tech Stack
-- Frontend: HTML5, CSS3 (Glassmorphism design system), JavaScript (Fetch API, asynchronous UI handlers).
-- Backend: PHP (PDO for secure database abstraction, session management).
-- Database: MySQL (relational schema for users and tasks).
-- AI Integration: Google Generative AI API (gemini-3.8-flash).
-## 📁 Project Structure
-``` text
+✨ Features
+Glassmorphism UI: A sleek, modern dark-themed user interface built with advanced CSS3 and responsive layouts.
+Secure Authentication: Strict server-side validation, password complexity requirements with real-time UI feedback, secure password hashing (bcrypt), and strict email domain existence checks.
+Task Management: Add, view, complete/undo, and delete academic study tasks dynamically linked per user via secure database sessions.
+AI Study Assistant: Integrated with Google's Gemini AI API via cURL to provide instant, concise, and professional study recommendations and answers.
+🛠️ Tech Stack
+Frontend: HTML5, CSS3 (Glassmorphism design system), JavaScript (Fetch API, asynchronous UI handlers).
+Backend: PHP (PDO for secure database abstraction, session management).
+Database: MySQL (relational schema for users and tasks).
+AI Integration: Google Generative AI API (gemini-3.8-flash).
+📁 Project Structure
 study_pro/
 │
 ├── config/
@@ -58,4 +57,3 @@ $apiKey = "YOUR_ACTUAL_API_KEY_HERE";
 5. Run the Application:
 Open your browser and navigate to the project's public directory:
 http://localhost/study_pro/public/index.php
-
