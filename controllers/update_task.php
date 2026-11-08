@@ -29,6 +29,6 @@ if (isset($_GET['id'])) {
 }
 
 // Redirect back to the main interface
-header('Location: ../public/index.php');
+header('Location: ../public/dashboard.php');
 exit;
 ?>

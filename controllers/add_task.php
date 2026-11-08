@@ -1,24 +1,22 @@
 <?php
-// controllers/add_task.php
+session_start();
+require_once '../config/database.php';
 
-require_once __DIR__ . '/../config/database.php';
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $task_text = trim($_POST['task_text'] ?? '');
-
-    if (!empty($task_text)) {
-        try {
-           
-            $stmt = $pdo->prepare("INSERT INTO tasks (title, is_completed) VALUES (:title, 0)");
-            $stmt->execute([
-                ':title' => $task_text
-            ]);
-        } catch (PDOException $e) {
-            die("Error adding task: " . $e->getMessage());
-        }
-    }
+if (!isset($_SESSION['user_id'])) {
+    header("Location: ../public/login.php");
+    exit();
 }
 
-header('Location: ../public/index.php');
-exit;
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $task_text = trim($_POST['task_text']);
+    $user_id = $_SESSION['user_id'];
+
+    if (!empty($task_text)) {
+        $stmt = $pdo->prepare("INSERT INTO tasks (user_id, title, is_completed) VALUES (?, ?, 0)");
+        $stmt->execute([$user_id, $task_text]);
+    }
+
+    header("Location: ../public/dashboard.php");
+    exit();
+}
 ?>
