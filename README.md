@@ -11,6 +11,7 @@ A modern, secure, and production-ready Web Application designed to help students
 - Database: MySQL (relational schema for users and tasks).
 - AI Integration: Google Generative AI API (gemini-3.8-flash).
 ## 📁 Project Structure
+``` text 
 study_pro/
 │
 ├── config/
@@ -31,9 +32,10 @@ study_pro/
 │   ├── register.php
 │   └── style.css
 └── README.md
+```
 ## 🚀 Getting Started
 - To get a local copy up and running, follow these simple steps:
-  ### Prerequisites
+### Prerequisites
 - Install a local server environment that supports PHP and MySQL (e.g., XAMPP, WampServer, or MAMP).
 - A web browser (Google Chrome, Firefox, etc.).
 - A valid Google Gemini API Key from Google AI Studio.
