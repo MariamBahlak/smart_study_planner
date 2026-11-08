@@ -87,7 +87,7 @@ $tasks = $stmt->fetchAll();
             </div>
         </div>
 
-        <form action="logout.php" method="POST">
+        <form action="../controllers/logout.php" method="POST">
             <button type="submit" class="logout-btn">Logout</button>
         </form>
     </div>
