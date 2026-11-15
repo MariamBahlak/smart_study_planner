@@ -28,7 +28,6 @@ study_pro/
 │   ├── dashboard.php
 │   ├── index.php
 │   ├── login.php
-│   ├── logout.php
 │   ├── register.php
 │   └── style.css
 └── README.md
